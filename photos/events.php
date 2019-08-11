@@ -58,7 +58,6 @@
           closedir($myDirectory2);
         ?>
       </select>
-      <script src = "../../script3.js"></script>
       <span>|</span>
       <a href = "https://www.firstinspires.org/robotics/ftc" target = "_blank"><img src = "/resources/FIRST_logo.png"></a>
       <span>|</span>
@@ -75,7 +74,7 @@
           if($dirArray2[$i][0] != '.') {
             //display files that end with .jpg as images
             if(substr($dirArray2[$i],-3) == 'jpg' || substr($dirArray2[$i],-3) == 'JPG') {
-              echo '<div><a href = ' . $dirArray2[$i] . ' target = "_blank"><img src = ' . $dirArray2[$i] . '></a></div>';
+              echo '<div><a href = ' . $dirArray2[$i] . ' target = "_blank"><img data-src = ' . $dirArray2[$i] . '></a></div>';
               //continue to next loop iteration
               continue;
             }
@@ -88,5 +87,6 @@
         }
         closedir($myDirectory2);
     ?>
+  <script src = "../../script3.js"></script>
   </body>
 </html>
