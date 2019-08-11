@@ -55,7 +55,6 @@
           closedir($myDirectory2);
         ?>
       </select>
-      <script src = "../script2.js"></script>
       <span>|</span>
       <a href = "https://www.firstinspires.org/robotics/ftc" target = "_blank"><img src = "/resources/FIRST_logo.png"></a>
       <span>|</span>
@@ -69,7 +68,7 @@
           continue;
         }
         if(substr($filename, -3) == 'jpg' || substr($filename, -3) == 'JPG') {
-          echo '<div><a href = ' . substr($filename, 2) . ' target = "_blank"><img src = ' . substr($filename, 2) . '></a></div>';
+          echo '<div><a href = ' . substr($filename, 2) . ' target = "_blank"><img data-src = ' . substr($filename, 2) . '></a></div>';
           continue;
         }
         if(substr($filename, -3) == 'mov' || substr($filename, -3) == 'MOV') {
@@ -77,5 +76,6 @@
         }
       }
     ?>
+  <script src = "../script2.js"></script>
   </body>
 </html>
