@@ -16,3 +16,16 @@ a.addEventListener('change', function() {
     window.location = "/photos/";
   }
 });
+
+//Lazy loading technique, loads images as the user scrolls
+var imgs = document.getElementsByTagName('img');
+var divs = document.getElementsByTagName('div');
+window.addEventListener("scroll", LoadTheStuff);
+LoadTheStuff();
+function LoadTheStuff() {
+    for(var i = 2; i < imgs.length; i++) {
+      if(divs[i-2].getBoundingClientRect().top < (window.innerHeight + 300 || document.documentElement.clientHeight + 300) && divs[i-2].getBoundingClientRect().bottom > -300) {
+        imgs[i].setAttribute('src', imgs[i].getAttribute('data-src'));
+      }
+    }
+};
