@@ -1,4 +1,4 @@
-# Robotics-Website
+# Roseburg High School's Robotics Website
 Robotics Website Code for Roseburg High School's FTC teams
 
 ## Developers
