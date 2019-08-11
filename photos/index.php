@@ -45,11 +45,14 @@
           closedir($myDirectory);
         ?>
       </select>
-      <script src = "script.js"></script>
       <span>|</span>
       <a href = "https://www.firstinspires.org/robotics/ftc" target = "_blank"><img src = "/resources/FIRST_logo.png"></a>
       <span>|</span>
     </nav>
+    <noscript>
+      <br>
+      <span style="color:red;">You will need to enable javascript for the photos to load.<br><br>View instructions for enabling javascript </span><a href = "https://www.enable-javascript.com" target = "_blank">Here</a><br>
+    </noscript>
     <?php
       //Recursive Directory Iterator, YAY! this loops through items in directory, then loops through all subdirectories and subdirectories of those directories
       $di = new RecursiveDirectoryIterator('.');
@@ -61,7 +64,7 @@
         }
         //get all images and display them as ... IMAGES!!!
         if(substr($filename, -3) == 'jpg' || substr($filename, -3) == 'JPG') {
-          echo '<div><a href = ' . substr($filename, 2) . ' target = "_blank"><img src = ' . substr($filename, 2) . '></a></div>';
+          echo '<div><a href = ' . substr($filename, 2) . ' target = "_blank"><img data-src = ' . substr($filename, 2) . '></a></div>';
           continue;
         }
         //get all (mp3?) videos and display in a video element
@@ -70,5 +73,6 @@
         }
       }
     ?>
+    <script src = "script.js"></script>
   </body>
 </html>
