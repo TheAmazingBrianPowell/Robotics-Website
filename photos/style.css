@@ -1,0 +1,85 @@
+/* Photo Gallery Style */
+body{
+  margin:0px;
+  overscroll-behavior:none;
+  text-align:center;
+  font-family: 'Orbitron', sans-serif;
+}
+div img{
+  width:100%;
+  image-orientation: from-image;
+}
+div:hover{
+  cursor:pointer;
+  opacity:0.8;
+  z-index:-1;
+}
+video{
+  margin:5px;
+  image-orientation: from-image;
+  width:calc(32% - 8px);
+  outline:none;
+}
+div{
+  display:inline-block;
+  height:20vw;
+  margin:5px;
+  overflow:hidden;
+  width:calc(32% - 8px);
+}
+@media only screen and (min-width: 740px) {
+  h1{
+    font-size:3em;
+  }
+  nav{
+    position:sticky;
+  	top:0px;
+    background:#777;
+    padding:10px;
+    font-size:1.2em;
+    opacity:0.99;
+    z-index:1;
+  }
+  nav>a{
+    text-decoration:none;
+  	color:black;
+  }
+
+  nav>a:hover{
+    text-decoration:underline;
+  }
+  nav img{
+    height:1em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  h1{
+    font-size:3.5em;
+  }
+}
+@media only screen and (max-width: 739px) {
+  h1{
+    font-size:2em;
+  }
+  nav{
+    position:sticky;
+  	top:0px;
+    background:#777;
+    padding:10px;
+    font-size:0.8em;
+    opacity:0.99;
+  }
+
+  nav>a, h1>a{
+    text-decoration:none;
+  	color:black;
+  }
+
+  nav>a:hover, h1>a:hover{
+    text-decoration:underline;
+  }
+
+  nav img{
+    height:0.7em;
+  }
+}
