@@ -9,9 +9,6 @@ body{
   overscroll-behavior:none;
   font-family: 'Orbitron', sans-serif;
 }
-.testdome-certificate-stamp{
-  display:inline-block !important;
-}
 figure{
   display:inline-block;
   width:30vmin;
@@ -51,12 +48,21 @@ figcaption{
 select{
   outline:none;
 }
-p{
+p, pre{
   text-align:justify;
   font-family:times, serif;
   width:80%;
   max-width:700px;
   margin:auto;
+}
+
+pre{
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
 body>img{
   width:50vmin;

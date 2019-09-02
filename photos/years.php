@@ -3,6 +3,7 @@
   if(substr($_SERVER['REQUEST_URI'],-1) != '/') {
     //redirect to current directory
     header('Location: .');
+    exit();
   }
 ?>
 <!DOCTYPE html>
@@ -13,9 +14,10 @@
   YAY!!!
   '(When you have a bad code IDE, the apostrophe...)
 -->
-<html>
+<html lang="en">
   <head>
-    <title>PHOTOS</title>
+    <meta charset="UTF-8">
+    <title>Photos <?php echo str_replace(['_','/'], ' ', substr($_SERVER['REQUEST_URI'],8,9)); ?></title>
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link rel="icon" href="/resources/favicon.ico">
@@ -25,11 +27,11 @@
     <h1>PHOTOS</h1>
     <nav>
       <span>|</span>
-      <a href = "http://www.roseburg.k12.or.us/rhs/" target = "_blank"><img src = "/resources/feather.png"></a>
+      <a href = "http://www.roseburg.k12.or.us/rhs/" target = "_blank" rel="noreferrer" title = "Roseburg High School"><img src = "/resources/feather.png" alt = "Roseburg High School"></a>
       <span>|</span>
       <a href = "/">Home</a>
       <span>|</span>
-      <select>
+      <select aria-label = "Filter">
         <option>All Years</option>
         <?php
           //basically the same as events.php in the same directory, just look at that for comments
@@ -56,7 +58,7 @@
         ?>
       </select>
       <span>|</span>
-      <a href = "https://www.firstinspires.org/robotics/ftc" target = "_blank"><img src = "/resources/FIRST_logo.png"></a>
+      <a href = "https://www.firstinspires.org/robotics/ftc" target = "_blank" rel="noreferrer" title = "First Tech Challenge"><img src = "/resources/FIRST_logo.png" alt = "First Tech Challenge"></a>
       <span>|</span>
     </nav>
     <?php
@@ -68,7 +70,7 @@
           continue;
         }
         if(substr($filename, -3) == 'jpg' || substr($filename, -3) == 'JPG') {
-          echo '<div><a href = ' . substr($filename, 2) . ' target = "_blank"><img data-src = ' . substr($filename, 2) . '></a></div>';
+          echo '<div><a href = ' . substr($filename, 2) . ' target = "_blank"><img data-src = ' . substr($filename, 2) . ' alt = "' . str_replace('_', ' ', substr($filename,strpos($filename, '/', 12) + 1, -4)) . '"></a></div>';
           continue;
         }
         if(substr($filename, -3) == 'mov' || substr($filename, -3) == 'MOV') {

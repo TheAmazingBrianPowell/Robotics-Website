@@ -1,0 +1,9 @@
+User-agent: *
+Sitemap: http://209.237.81.241/sitemap.php
+Disallow: /error/
+Disallow: /notebooks/years
+Disallow: /photos/events
+Disallow: /photos/years
+Disallow: /profiles/years
+Disallow: /profiles/people
+Disallow: /resources/

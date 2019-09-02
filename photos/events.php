@@ -1,6 +1,7 @@
 <?php
   if(substr($_SERVER['REQUEST_URI'],-1) != '/') {
     header('Location: .');
+    exit();
   }
 ?>
 <!DOCTYPE html>
@@ -8,9 +9,10 @@
   Same old boring document, just linked to in a bunch of index.phps with their require to help save unnessesary coping and pasting!
   includes events.php document which is not accessible or discoverable on the website by itself
 -->
-<html>
+<html lang="en">
   <head>
-    <title>PHOTOS</title>
+    <meta charset="UTF-8">
+    <title>Photos <?php echo str_replace(['_','/'], ' ', substr($_SERVER['REQUEST_URI'],8,-1)); ?></title>
     <link rel="stylesheet" type="text/css" href="../../style.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link rel="icon" href="/resources/favicon.ico">
@@ -20,11 +22,11 @@
     <h1>PHOTOS</h1>
     <nav>
       <span>|</span>
-      <a href = "http://www.roseburg.k12.or.us/rhs/" target = "_blank"><img src = "/resources/feather.png"></a>
+      <a href = "http://www.roseburg.k12.or.us/rhs/" target = "_blank" rel="noreferrer" title = "Roseburg High School"><img src = "/resources/feather.png" alt = "Roseburg High School"></a>
       <span>|</span>
       <a href = "/">Home</a>
       <span>|</span>
-      <select>
+      <select aria-label = "Filter">
         <option>All Years</option>
         <?php
           //open parent directory
@@ -59,7 +61,7 @@
         ?>
       </select>
       <span>|</span>
-      <a href = "https://www.firstinspires.org/robotics/ftc" target = "_blank"><img src = "/resources/FIRST_logo.png"></a>
+      <a href = "https://www.firstinspires.org/robotics/ftc" target = "_blank" rel="noreferrer" title = "First Tech Challenge"><img src = "/resources/FIRST_logo.png" alt = "First Tech Challenge"></a>
       <span>|</span>
     </nav>
     <?php
@@ -69,12 +71,12 @@
           $dirArray2[]=$entryName2;
         }
         //title the document what the current directory's name is.
-        echo '<h2>' . str_replace('_',' ',str_replace('/',' ',substr($_SERVER['REQUEST_URI'],8))) . '</h2>';
+        echo '<h2>' . str_replace(['/', '_'],' ',substr($_SERVER['REQUEST_URI'],8)) . '</h2>';
         for($i=0; $i < count($dirArray2); $i++) {
           if($dirArray2[$i][0] != '.') {
             //display files that end with .jpg as images
             if(substr($dirArray2[$i],-3) == 'jpg' || substr($dirArray2[$i],-3) == 'JPG') {
-              echo '<div><a href = ' . $dirArray2[$i] . ' target = "_blank"><img data-src = ' . $dirArray2[$i] . '></a></div>';
+              echo '<div><a href = ' . $dirArray2[$i] . ' target = "_blank"><img data-src = ' . $dirArray2[$i] . ' alt = "'. str_replace('_', ' ', substr($dirArray2[$i],strpos($dirArray2[$i], '/', 12) + 1, -4)) . '"></a></div>';
               //continue to next loop iteration
               continue;
             }
