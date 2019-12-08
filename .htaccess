@@ -3,6 +3,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-<Directory /teams>
-   Options +Indexes
+<Directory /app/teams>
+   Allow from all
 </Directory>
