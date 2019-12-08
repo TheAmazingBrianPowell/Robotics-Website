@@ -1,8 +1,10 @@
 Satisfy Any
 
+ErrorDocument 404 /error/404
+
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^.]+)$ $1.php [NC,L]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)/?$ $1.php [L]
 
 RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
 RewriteRule ^ /%1 [NC,L,R]
@@ -10,8 +12,8 @@ RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^ %{REQUEST_URI}.php [NC,L]
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^.]+)$ $1.html [NC,L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)/?$ $1.html [L]
 
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
