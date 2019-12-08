@@ -17,7 +17,7 @@
     <link rel="icon" href="resources/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="rhs, robotics, roseburg, high school, FTC, tech">
-    <meta name="google-site-verification" content="XCOVpjUowhbRiY_191pnKZ5vQDKvlEn2jBeFvbOre5M">
+    <meta name="google-site-verification" content="iY1Iy6FYXtVrRYqoOgU67hnFqe85uDv51zZ0Bu5YD7M">
   </head>
 <!--
   HELLO EVERYONE!!!
