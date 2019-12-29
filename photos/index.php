@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link rel="icon" href="/resources/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Roseburg High School Robotics teams and events from all years">
+    <meta name="Description" content="Roseburg High School Robotics photos and events from all years">
   </head>
   <body>
     <h1>PHOTOS</h1>
