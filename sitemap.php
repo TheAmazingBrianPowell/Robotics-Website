@@ -15,7 +15,7 @@
   date_default_timezone_set('America/Los_Angeles');
   $di = new RecursiveDirectoryIterator('.');
   foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
-    if((substr($filename, -9) == 'index.php' || substr($filename, -4) == 'html' || substr($filename, -3) == 'pdf') && substr($filename, 1, 7) != '/error/' && strpos($filename, 'vendor') !== FALSE && strpos($filename, '.heroku') !== FALSE) {
+    if((substr($filename, -9) == 'index.php' || substr($filename, -4) == 'html' || substr($filename, -3) == 'pdf') && substr($filename, 1, 7) != '/error/') {
       echo '<url><loc>https://' . $_SERVER['HTTP_HOST'] . ((substr($filename, -9) == 'index.php') ? substr($filename, 1, -9) : str_replace(['.html','.pdf'], '', substr($filename, 1))) . '</loc><lastmod>' . date('Y-m-d', filemtime ($file)) . '</lastmod><priority>' . ((strpos($filename, '/teams/') != false || substr($filename, -3) == 'pdf') ? 0.8 : round(1 / substr_count($filename, '/'), 2)) . '</priority></url>';
     }
   }
