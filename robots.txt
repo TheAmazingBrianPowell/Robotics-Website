@@ -3,4 +3,6 @@ Sitemap: http://209.237.81.241/sitemap.php
 Disallow: /error/
 Disallow: /photos/events
 Disallow: /photos/years
-Disallow: /resources/
+Disallow: /resources/*
+Disallow: /.heroku/*
+Disallow: /vendor/*
