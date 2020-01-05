@@ -67,10 +67,6 @@
       <span>|</span>
       <a href = "#events">Events</a>
       <span>|</span>
-      <a href = "/profiles/">Profiles</a>
-      <span>|</span>
-      <a href = "/notebooks/">Notebooks</a>
-      <span>|</span>
       <a href = "https://www.firstinspires.org/robotics/ftc" target = "_blank" rel="noreferrer" title = "First Tech Challenge"><img src = "resources/FIRST_logo.png" alt = "FIRST Tech Challenge Logo"></a>
       <span>|</span>
     </nav>
