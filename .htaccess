@@ -13,16 +13,16 @@ RewriteEngine On
 #RewriteCond %{THE_REQUEST} ([^.]+)\.php [NC]
 #RewriteRule ^ /%1 [NC,L,R=301]
 
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+#RewriteCond %{REQUEST_FILENAME}.php -f
+#RewriteRule ^ %{REQUEST_URI}.php [NC,L]
 
 #rewrites files with html extension
-RewriteCond %{REQUEST_URI} ^(.*)\.html [NC]
+RewriteCond %{REQUEST_URI} ^(.*)\.html$ [NC]
 RewriteRule ^ https://rhs-robotics.herokuapp.com/$1 [NC,L,R=301]
 
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+#RewriteCond %{REQUEST_FILENAME}.html -f
+#RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 #rewrites http to https
-RewriteCond %{HTTP:X-Forwarded-Proto} !https 
-RewriteRule ^ https://rhs-robotics.herokuapp.com/%{REQUEST_URI} [L,R=301]
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+#RewriteRule ^ https://rhs-robotics.herokuapp.com/%{REQUEST_URI} [L,R=301]
