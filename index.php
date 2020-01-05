@@ -91,15 +91,14 @@
         <!-- Image and link to Officers profile page with caption -->
         <figure>
           <a href = "profiles/2019-2020/Brian-Powell">
-            <!-- It hurts a lot to put a blank alt attribute here, but I don't want the text to just repeat itself with the figcaption having the same content. '-->
             <img src = "resources/placeholder.png" alt = "">
-            <figcaption>Bob&nbspBuilder<br>(President)</figcaption>
+            <figcaption>Jace<br>(President)</figcaption>
           </a>
         </figure>
         <figure>
           <a href = "profiles/2019-2020/Brian-Powell">
             <img src = "resources/ohnoes.jpg" alt = "">
-            <figcaption>Oh&nbspNoes<br>(Vice&nbspPresident)</figcaption>
+            <figcaption>Kou<br>(Vice&nbspPresident)</figcaption>
           </a>
         </figure>
         <figure>
@@ -129,7 +128,7 @@
         <figure>
           <a href = "profiles/2019-2020/Brian-Powell">
             <img src = "resources/placeholder.png" alt = "">
-            <figcaption>Brian&nbspPowell<br>(Somebody)</figcaption>
+            <figcaption>Brian&nbspPowell<br>(Website&nbspManager)</figcaption>
           </a>
         </figure>
       </section>
