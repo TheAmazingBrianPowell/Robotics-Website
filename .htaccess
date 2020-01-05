@@ -7,18 +7,21 @@ ErrorDocument 500 /error/500
 RewriteEngine On
 
 #rewrites php files to directories
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^ %{REQUEST_URI}.php [NC,L]
 
 RewriteCond %{REQUEST_URI} ^/(.*)\.php$ [NC]
-RewriteRule ^ https://rhs-robotics.herokuapp.com/%1 [NC,L,R=301]
+RewriteRule ^.*$ https://rhs-robotics.herokuapp.com/%1 [NC,L,R=301]
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^.*$ %{REQUEST_URI}.php [NC,L]
+
 
 #rewrites files with html extension
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^ %{REQUEST_URI}.html [NC,L]
-
 RewriteCond %{REQUEST_URI} ^/(.*)\.html$ [NC]
-RewriteRule ^ https://rhs-robotics.herokuapp.com/%1 [NC,L,R=301]
+RewriteRule ^.*$ https://rhs-robotics.herokuapp.com/%1 [NC,L,R=301]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^.*$ %{REQUEST_URI}.html [NC,L]
+
 
 #rewrites http to https
 #RewriteCond %{HTTP:X-Forwarded-Proto} !https 
