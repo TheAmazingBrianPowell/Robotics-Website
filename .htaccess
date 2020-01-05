@@ -7,9 +7,6 @@ ErrorDocument 500 /error/500
 RewriteEngine On
 
 #rewrites php files to directories
-RewriteCond %{REQUEST_URI} ^/(.*)/.*\.php$ [NC,OR]
-RewriteCond %{REQUEST_FILENAME}.php -f [NC]
-RewriteRule ^ https://rhs-robotics.herokuapp.com/%1 [NC,L,R=301]
 
 #rewrites files with html extension
 RewriteCond %{REQUEST_URI} ^/(.*)\.html$ [NC]
