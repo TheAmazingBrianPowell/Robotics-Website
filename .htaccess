@@ -13,21 +13,21 @@ RewriteRule ^(.*)/$ /$1 [L,R=301]
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.+)/?$ $1.php [L]
 
-RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
-RewriteRule ^ /%1 [NC,L,R=301]
+#RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+#RewriteRule ^ /%1 [NC,L,R=301]
 
-#RewriteCond %{REQUEST_FILENAME}.php -f
-#RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [NC,L]
 
 #rewrites files with html extension
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+)/?$ $1.html [L]
 
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R=301]
+#RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+#RewriteRule ^ /%1 [NC,L,R=301]
 
-#RewriteCond %{REQUEST_FILENAME}.html -f
-#RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 #rewrites http to https
 RewriteCond %{HTTP:X-Forwarded-Proto} !https 
