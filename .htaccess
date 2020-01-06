@@ -9,7 +9,7 @@ RewriteEngine On
 #rewrites php files to directories
 
 RewriteCond %{REQUEST_FILENAME} \.php$ [NC]
-RewriteRule ^ https://rhs-robotics.herokuapp.com/$1 [NC,L,R]
+RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*) $1 [NC,L,R]
 
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^ %{REQUEST_URI}.php [NC,L]
@@ -17,7 +17,7 @@ RewriteRule ^ %{REQUEST_URI}.php [NC,L]
 
 #rewrites files with html extension
 RewriteCond %{REQUEST_FILENAME} \.html$ [NC]
-RewriteRule ^ https://rhs-robotics.herokuapp.com/$1 [NC,L,R]
+RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*) $1 [NC,L,R]
 
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
