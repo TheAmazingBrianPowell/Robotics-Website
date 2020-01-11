@@ -65,8 +65,8 @@
       $di = new RecursiveDirectoryIterator('.');
       $stuff = [];
       foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
-        if(substr($filename, -2) == '..') {
-          echo '<h2>' . str_replace('_',' ',substr($filename, 2, -3)) . '</h2>';
+        if(substr($filename, -2) == '/') {
+          echo '<h2>' . str_replace('_',' ',substr($filename, 2, -1)) . '</h2>';
           continue;
         }
         if(substr($filename, -3) == 'jpg' || substr($filename, -3) == 'JPG') {
