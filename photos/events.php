@@ -89,6 +89,6 @@
         }
         closedir($myDirectory2);
     ?>
-  <script src = "script3.js"></script>
+  <script src = "../../script3.js"></script>
   </body>
 </html>
