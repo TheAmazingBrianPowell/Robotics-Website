@@ -9,7 +9,7 @@ a.addEventListener('change', function() {
       window.location = a.value.replace(new RegExp(' ', 'g'), '_');
     }else{
       //otherwise go to a years page
-      window.location = '/photos/' + a.value.substring(1).replace(new RegExp(' ', 'g'), '_');
+      window.location = '/photos/' + a.value.replace(new RegExp(' ', 'g'), '_');
     }
   }else{
     //otherwise, go to the main photos directory
