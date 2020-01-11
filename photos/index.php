@@ -61,7 +61,7 @@
       $di = new RecursiveDirectoryIterator('.');
       foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
         //get all folders in directory and display their titles
-        if(substr($filename, -2) == '/') {
+        if(substr($filename, -1) == '/') {
           echo '<h2>' . str_replace('/',' ',str_replace('_',' ',substr($filename, 2, -1))) . '</h2>';
           continue;
         }
