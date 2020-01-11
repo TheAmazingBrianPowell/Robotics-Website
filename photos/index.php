@@ -58,7 +58,7 @@
     </noscript>
     <?php
       //Recursive Directory Iterator, YAY! this loops through items in directory, then loops through all subdirectories and subdirectories of those directories
-      $di = new RecursiveDirectoryIterator('.');
+      $di = new RecursiveDirectoryIterator('.',RecursiveIteratorIterator::SELF_FIRST);
       foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
         //get all folders in directory and display their titles
         echo $filename . '<br>' . substr($filename,-2) . '<br><br>';
