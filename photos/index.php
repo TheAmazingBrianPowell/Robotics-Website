@@ -60,6 +60,7 @@
       //Recursive Directory Iterator, YAY! this loops through items in directory, then loops through all subdirectories and subdirectories of those directories
       $di = new RecursiveDirectoryIterator('.');
       foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
+        echo $filename;
         //get all folders in directory and display their titles
         if(substr($filename, -2) == '..') {
           echo '<h2>' . str_replace('/',' ',str_replace('_',' ',substr($filename, 2, -3))) . '</h2>';
