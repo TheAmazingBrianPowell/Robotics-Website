@@ -62,8 +62,8 @@
       foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
         echo $filename;
         //get all folders in directory and display their titles
-        if(substr($filename, -2) == '..') {
-          echo '<h2>' . str_replace('/',' ',str_replace('_',' ',substr($filename, 2, -3))) . '</h2>';
+        if(substr($filename, -2) == '/') {
+          echo '<h2>' . str_replace('/',' ',str_replace('_',' ',substr($filename, 2, -1))) . '</h2>';
           continue;
         }
         //get all images and display them as ... IMAGES!!!
