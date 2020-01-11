@@ -10,7 +10,7 @@ a.addEventListener('change', function() {
   //if the value changed to something other than all years...
   if(a.value != 'All Years') {
     //change the page to the current directory + the option value with the underscores ('_') added back in
-    window.location = a.value.replace(new RegExp(' ', 'g'), '_');
+    window.location = a.value.substring(1).replace(new RegExp(' ', 'g'), '_');
   }else{
     //otherwise we must be headed to the main photos page for all the years!
     window.location = "/photos/";
