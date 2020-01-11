@@ -63,10 +63,10 @@
       foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
         //get all folders in directory and display their titles
         echo $filename . '<br>' . substr($filename,-2) . '<br><br>';
-        if(str_replace('/',' ',str_replace('_',' ',substr(preg_replace("^(.*)/[^/]$", $1, $filename), 2))) == $prevName) {
-          echo '<h2>' . str_replace('/',' ',str_replace('_',' ',substr(preg_replace("^(.*)/[^/]$", $1, $filename), 2))) . '</h2>';
+        if(str_replace('/',' ',str_replace('_',' ',substr(preg_replace("^(.*)\/[^\/]*$", $1, $filename), 2))) == $prevName) {
+          echo '<h2>' . str_replace('/',' ',str_replace('_',' ',substr(preg_replace("^(.*)\/[^\/]*$", $1, $filename), 2))) . '</h2>';
         } else {
-          $prevName = str_replace('/',' ',str_replace('_',' ',substr(preg_replace("^(.*)/[^/]$", $1, $filename), 2))); 
+          $prevName = str_replace('/',' ',str_replace('_',' ',substr(preg_replace("^(.*)\/[^\/]*$", $1, $filename), 2))); 
         }
         //get all images and display them as ... IMAGES!!!
         if(substr($filename, -3) == 'jpg' || substr($filename, -3) == 'JPG') {
