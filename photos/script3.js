@@ -4,9 +4,9 @@ a.addEventListener('change', function() {
   if(a.value != 'All Years') {
     if(a.value[0] != 2) {
       //.. goes to parent directory, that way it looks for an event in the years directory, not the current event directory that doesn't contain the other events
-      window.location = '../' + a.value.replace(new RegExp(' ', 'g'), '_');
+      window.location = '../' + a.value.substring(1).replace(new RegExp(' ', 'g'), '_');
     }else{
-      window.location = '/photos/' + a.value.replace(new RegExp(' ', 'g'), '_');
+      window.location = '/photos/' + a.value.substring(1).replace(new RegExp(' ', 'g'), '_');
     }
   }else{
     window.location = "/photos/";
