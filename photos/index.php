@@ -62,7 +62,7 @@
       $prevName = "";
       foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
         //get all folders in directory and display their titles
-        if(str_replace('/',' ',str_replace('_',' ',preg_replace('/^..([^\/]*)\/(.*)\/[^\/]*$/', '$1 $2', $filename))) == $prevName) {
+        if(str_replace('/',' ',str_replace('_',' ',preg_replace('/^..([^\/]*)\/(.*)\/[^\/]*$/', '$1 $2', $filename))) != $prevName) {
           echo '<h2>' . str_replace('/',' ',str_replace('_',' ',preg_replace('/^..([^\/]*)\/(.*)\/[^\/]*$/', '$1 $2', $filename))) . '</h2>';
         }
         $prevName = str_replace('/',' ',str_replace('_',' ',preg_replace('/^..([^\/]*)\/(.*)\/[^\/]*$/', '$1 $2', $filename))); 
