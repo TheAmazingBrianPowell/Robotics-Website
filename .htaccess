@@ -25,4 +25,4 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 
 #rewrites http to https
 RewriteCond %{HTTP:X-Forwarded-Proto} !https 
-RewriteRule ^ https://rhs-robotics.herokuapp.com/%{REQUEST_URI} [L,R]
+RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI} [L,R]
