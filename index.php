@@ -77,7 +77,7 @@
       <p>
         &#8195Welcome to Roseburg High School's Robotics Website! The RHS Robotics program is a competitive, student run club that allows for unique experience of the FIRST Tech Challenge Program.
         <br>&#8195The FIRST FTC competition enables students to design, build, program, and compete with a robot, hopefully in that order, in their new challenge each year. This year, the challenge is named Skystone, and the playing field looks like this:<br>
-        <img src = "/resources/first_field_skystone.png" width = 100%">
+        <img src = "/resources/first_field_skystone.png" width = 100%" alt = "The FTC playing field includes many different obstacles. This year the main goal is to tranport and stack the yellow and black stones">
       </p>
     </article>
     <section id = "officers">
