@@ -12,7 +12,7 @@ RewriteEngine On
 #RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.php $1 [NC,L,R]
 
 RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+RewriteRule ^(.*)$ $1.php [NC,L]
 
 
 #rewrites files with html extension
@@ -20,7 +20,7 @@ RewriteRule ^ %{REQUEST_URI}.php [NC,L]
 #RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.html $1 [NC,L,R]
 
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+RewriteRule ^(.*)$ $1.html [NC,L]
 
 
 #rewrites http to https
