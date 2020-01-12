@@ -66,10 +66,10 @@
       $prevName = "";
       foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
         if(substr($filename, -3) != 'mov' && substr($filename, -3) != 'MOV' && substr($filename, -3) != 'jpg' && substr($filename, -3) != 'JPG') continue;
-        if(str_replace('/',' ',str_replace('_',' ',preg_replace('/^..[^\/]*\/(.*)\/[^\/]*$/', '$1 $2', $filename))) != $prevName) {
-          echo '<h2>' . str_replace('/',' ',str_replace('_',' ',preg_replace('^..[^\/]*\/(.*)\/[^\/]*$/', '$1 $2', $filename))) . '</h2>';
+        if(str_replace('/',' ',str_replace('_',' ',preg_replace('/^..[^\/]*\/(.*)\/[^\/]*$/', '$1', $filename))) != $prevName) {
+          echo '<h2>' . str_replace('/',' ',str_replace('_',' ',preg_replace('^..[^\/]*\/(.*)\/[^\/]*$/', '$1', $filename))) . '</h2>';
         }
-        $prevName = str_replace('/',' ',str_replace('_',' ',preg_replace('/^..[^\/]*\/(.*)\/[^\/]*$/', '$1 $2', $filename))); 
+        $prevName = str_replace('/',' ',str_replace('_',' ',preg_replace('/^..[^\/]*\/(.*)\/[^\/]*$/', '$1', $filename))); 
         if(substr($filename, -3) == 'jpg' || substr($filename, -3) == 'JPG') {
           echo '<div><a href = ' . substr($filename, 2) . ' target = "_blank"><img data-src = ' . substr($filename, 2) . ' alt = "' . str_replace('_', ' ', substr($filename,strpos($filename, '/', 12) + 1, -4)) . '"></a></div>';
           continue;
