@@ -61,6 +61,7 @@
       $di = new RecursiveDirectoryIterator('.');
       $prevName = "";
       foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
+        if(substr($filename, -3) != 'mov' || substr($filename, -3) != 'MOV' || substr($filename, -3) != 'jpg' || substr($filename, -3) != 'JPG') continue;
         //get all folders in directory and display their titles
         if(str_replace('/',' ',str_replace('_',' ',preg_replace('/^..([^\/]*)\/(.*)\/[^\/]*$/', '$1 $2', $filename))) != $prevName) {
           echo '<h2>' . str_replace('/',' ',str_replace('_',' ',preg_replace('/^..([^\/]*)\/(.*)\/[^\/]*$/', '$1 $2', $filename))) . '</h2>';
