@@ -110,20 +110,20 @@
           </a>
         </figure>
         <figure>
-          <a href = "resources/Amy.jpg">
-            <img src = "resources/Amy.jpg" alt = "">
+          <a href = "resources/Amy.JPG">
+            <img src = "resources/Amy.JPG" alt = "">
             <figcaption>Amy<br>(Secretary)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Logan.jpg">
-            <img src = "resources/Logan.jpg" alt = "">
+          <a href = "resources/Logan.JPG">
+            <img src = "resources/Logan.JPG" alt = "">
             <figcaption>Brian<br>(Treasurer)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Brian.jpg">
-            <img src = "resources/Brian.jpg" alt = "">
+          <a href = "resources/Brian.JPG">
+            <img src = "resources/Brian.JPG" alt = "">
             <figcaption>Brian<br>(Website&nbspDesigner)</figcaption>
           </a>
         </figure>
