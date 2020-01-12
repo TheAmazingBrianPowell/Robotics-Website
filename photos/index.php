@@ -62,11 +62,11 @@
       $prevName = "";
       foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
         //get all folders in directory and display their titles
-        echo preg_replace('^..([^\/]*)\/(.*)\/[^\/]*$', '$1 $2', $filename);
-        if(str_replace('/',' ',str_replace('_',' ',preg_replace('^..([^\/]*)\/(.*)\/[^\/]*$', '$1 $2', $filename))) == $prevName) {
-          echo '<h2>' . str_replace('/',' ',str_replace('_',' ',preg_replace('^..([^\/]*)\/(.*)\/[^\/]*$', '$1 $2', $filename))) . '</h2>';
+        echo preg_replace('/^..([^\/]*)\/(.*)\/[^\/]*$/', '$1 $2', $filename);
+        if(str_replace('/',' ',str_replace('_',' ',preg_replace('/^..([^\/]*)\/(.*)\/[^\/]*$/', '$1 $2', $filename))) == $prevName) {
+          echo '<h2>' . str_replace('/',' ',str_replace('_',' ',preg_replace('/^..([^\/]*)\/(.*)\/[^\/]*$/', '$1 $2', $filename))) . '</h2>';
         } else {
-          $prevName = str_replace('/',' ',str_replace('_',' ',preg_replace('^..([^\/]*)\/(.*)\/[^\/]*$', '$1 $2', $filename))); 
+          $prevName = str_replace('/',' ',str_replace('_',' ',preg_replace('/^..([^\/]*)\/(.*)\/[^\/]*$/', '$1 $2', $filename))); 
         }
         //get all images and display them as ... IMAGES!!!
         if(substr($filename, -3) == 'jpg' || substr($filename, -3) == 'JPG') {
