@@ -86,45 +86,45 @@
 
         <!-- Image and link to Officers profile page with caption -->
         <figure>
-          <a href = "profiles/2019-2020/Brian-Powell">
-            <img src = "resources/placeholder.png" alt = "">
-            <figcaption>Jace<br>(President)</figcaption>
+          <a href = "resources/Jace.jpg">
+            <img src = "resources/Jace.jpg" alt>
+            <figcaption>Jace<br>(Co-President)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "profiles/2019-2020/Brian-Powell">
-            <img src = "resources/ohnoes.jpg" alt = "">
-            <figcaption>Kou<br>(Vice&nbspPresident)</figcaption>
+          <a href = "resources/Kou.jpg">
+            <img src = "resources/Kou.jpg" alt = "">
+            <figcaption>Kou<br>(Co-President)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "profiles/2019-2020/Brian-Powell">
-            <img src = "resources/placeholder.png" alt = "">
-            <figcaption>Brian&nbspPowell<br>(Somebody)</figcaption>
+          <a href = "resources/Maddy.jpg">
+            <img src = "resources/Maddy.jpg" alt = "">
+            <figcaption>Maddy<br>(Sergeant&nbspof&nbspArms)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "profiles/2019-2020/Brian-Powell">
-            <img src = "resources/placeholder.png" alt = "">
-            <figcaption>Brian&nbspPowell<br>(Somebody)</figcaption>
+          <a href = "resources/Clara.jpg">
+            <img src = "resources/Clara.jpg" alt = "">
+            <figcaption>Clara<br>(Media&nbspSpecialist)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "profiles/2019-2020/Brian-Powell">
-            <img src = "resources/placeholder.png" alt = "">
-            <figcaption>Brian&nbspPowell<br>(Somebody)</figcaption>
+          <a href = "resources/Amy.jpg">
+            <img src = "resources/Amy.jpg" alt = "">
+            <figcaption>Amy<br>(Secretary)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "profiles/2019-2020/Brian-Powell">
-            <img src = "resources/placeholder.png" alt = "">
-            <figcaption>Brian&nbspPowell<br>(Somebody)</figcaption>
+          <a href = "resources/Logan.jpg">
+            <img src = "resources/Logan.jpg" alt = "">
+            <figcaption>Brian<br>(Treasurer)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "profiles/2019-2020/Brian-Powell">
-            <img src = "resources/placeholder.png" alt = "">
-            <figcaption>Brian&nbspPowell<br>(Website&nbspManager)</figcaption>
+          <a href = "resources/Brian.jpg">
+            <img src = "resources/Brian.jpg" alt = "">
+            <figcaption>Brian<br>(Website&nbspDesigner)</figcaption>
           </a>
         </figure>
       </section>
