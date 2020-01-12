@@ -87,43 +87,43 @@
 
         <!-- Image and link to Officers profile page with caption -->
         <figure>
-          <a href = "resources/Jace.jpg">
+          <a href = "resources/Jace.jpg" target = "_blank">
             <img src = "resources/Jace.jpg" alt>
             <figcaption>Jace<br>(Co-President)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Kou.jpg">
+          <a href = "resources/Kou.jpg" target = "_blank">
             <img src = "resources/Kou.jpg" alt = "">
             <figcaption>Kou<br>(Co-President)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Maddy.jpg">
+          <a href = "resources/Maddy.jpg" target = "_blank">
             <img src = "resources/Maddy.jpg" alt = "">
             <figcaption>Maddy<br>(Sergeant&nbspof&nbspArms)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Clara.jpg">
+          <a href = "resources/Clara.jpg" target = "_blank">
             <img src = "resources/Clara.jpg" alt = "">
             <figcaption>Clara<br>(Media&nbspSpecialist)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Amy.JPG">
+          <a href = "resources/Amy.JPG" target = "_blank">
             <img src = "resources/Amy.JPG" alt = "">
             <figcaption>Amy<br>(Secretary)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Logan.JPG">
+          <a href = "resources/Logan.JPG" target = "_blank">
             <img src = "resources/Logan.JPG" alt = "">
             <figcaption>Brian<br>(Treasurer)</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Brian.JPG">
+          <a href = "resources/Brian.JPG" target = "_blank">
             <img src = "resources/Brian.JPG" alt = "">
             <figcaption>Brian<br>(Website&nbspDesigner)</figcaption>
           </a>
