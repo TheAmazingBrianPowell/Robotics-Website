@@ -66,8 +66,11 @@
       $prevName = "";
       foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
         if(substr($filename, -3) != 'mov' && substr($filename, -3) != 'MOV' && substr($filename, -3) != 'jpg' && substr($filename, -3) != 'JPG') continue;
+        
+        echo str_replace('/',' ',str_replace('_',' ',preg_replace('/^..[^\/]*\/(.*)\/[^\/]*$/', '$1', $filename))) . '<br>' . $prevName . '<br><br>';
+        
         if(str_replace('/',' ',str_replace('_',' ',preg_replace('/^..[^\/]*\/(.*)\/[^\/]*$/', '$1', $filename))) != $prevName) {
-          echo '<h2>' . str_replace('/',' ',str_replace('_',' ',preg_replace('^..[^\/]*\/(.*)\/[^\/]*$/', '$1', $filename))) . '</h2>';
+          echo '<h2>' . str_replace('/',' ',str_replace('_',' ',preg_replace('/^..[^\/]*\/(.*)\/[^\/]*$/', '$1', $filename))) . '</h2>';
         }
         $prevName = str_replace('/',' ',str_replace('_',' ',preg_replace('/^..[^\/]*\/(.*)\/[^\/]*$/', '$1', $filename))); 
         if(substr($filename, -3) == 'jpg' || substr($filename, -3) == 'JPG') {
