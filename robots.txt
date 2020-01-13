@@ -1,5 +1,5 @@
 User-agent: *
-Sitemap: http://209.237.81.241/sitemap.php
+Sitemap: https://rhs-robotics.herokuapp.com/sitemap
 Disallow: /error/
 Disallow: /photos/events
 Disallow: /photos/years
