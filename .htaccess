@@ -22,6 +22,9 @@ RewriteRule ^(.*)$ $1.php [NC,L]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 
+RewriteCond %{REQUEST_FILENAME}.pdf -f
+RewriteRule ^(.*)$ $1.pdf [NC,L]
+
 
 #rewrites http to https
 RewriteCond %{HTTP:X-Forwarded-Proto} !https 
