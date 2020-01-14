@@ -120,7 +120,7 @@
         <figure>
           <a href = "resources/Logan.JPG" target = "_blank">
             <img src = "resources/Logan.JPG" alt = "">
-            <figcaption>Brian<br>(Treasurer)</figcaption>
+            <figcaption>Logan<br>(Treasurer)</figcaption>
           </a>
         </figure>
         <figure>
