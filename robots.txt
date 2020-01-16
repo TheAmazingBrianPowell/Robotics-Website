@@ -1,9 +1,7 @@
 User-agent: *
 Sitemap: https://rhs-robotics.herokuapp.com/sitemap
-Disallow: /error/
+Disallow: /error
 Disallow: /photos/events
 Disallow: /photos/years
-Disallow: /resources/*
-Disallow: /.heroku/*
-Disallow: /vendor/*
-Allow: /resources/notebooks/*
+Disallow: /.heroku
+Disallow: /vendor
