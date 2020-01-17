@@ -84,7 +84,7 @@
       <h2>Scores</h2>
       <ul>
         <li>Scorpio's scores can be found <a href = "https://ftcscores.com/team/13189" rel="noreferrer" target = "_blank">here</a></li>
-        <li>Aries' scores can be found <a href = "https://ftcscores.com/team/15342 rel="noreferrer" "target = "_blank">here</a></li>
+        <li>Aries' scores can be found <a href = "https://ftcscores.com/team/15342" rel="noreferrer" target = "_blank">here</a></li>
         <li>Taurus' scores can be found <a href = "https://ftcscores.com/team/15341" rel="noreferrer" target = "_blank">here</a></li>
       </ul>
       <h2>Links</h2>
