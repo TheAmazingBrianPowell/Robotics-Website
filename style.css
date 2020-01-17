@@ -61,6 +61,10 @@ figure svg{
   z-index:0;
 }
 
+li {
+  text-align:left;
+}
+
 /* Remove link-like properties from images and svgs */
 figure a{
   text-decoration:none;
