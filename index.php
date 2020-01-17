@@ -83,15 +83,15 @@
       </p>
       <h2>Scores</h2>
       <ul>
-        <li>Scorpio's scores can be found <a href = "https://ftcscores.com/team/13189">here</a></li>
-        <li>Aries' scores can be found <a href = "https://ftcscores.com/team/15342">here</a></li>
-        <li>Taurus' scores can be found <a href = "https://ftcscores.com/team/15341">here</a></li>
+        <li>Scorpio's scores can be found <a href = "https://ftcscores.com/team/13189" rel="noreferrer" target = "_blank">here</a></li>
+        <li>Aries' scores can be found <a href = "https://ftcscores.com/team/15342 rel="noreferrer" "target = "_blank">here</a></li>
+        <li>Taurus' scores can be found <a href = "https://ftcscores.com/team/15341" rel="noreferrer" target = "_blank">here</a></li>
       </ul>
       <h2>Links</h2>
       <ul>
-        <li>Visit our <a href = "https://www.facebook.com/RoseburgHighSchoolRobotics">facebook page</a></li>
-        <li>View the <a href = "https://github.com/TheAmazingBrianPowell/Robotics-Website">code</a> to this website on github!</li>
-        <li><a href = "/resources/updated_donation_letter">Sponsor Us</a></li>
+        <li>Visit our <a href = "https://www.facebook.com/RoseburgHighSchoolRobotics" rel="noreferrer" target = "_blank">facebook page</a></li>
+        <li>View the <a href = "https://github.com/TheAmazingBrianPowell/Robotics-Website" rel="noreferrer" target = "_blank">code</a> to this website on github!</li>
+        <li><a href = "/resources/updated_donation_letter" rel="noreferrer" target = "_blank">Sponsor Us</a></li>
       </ul>
       <h2>The FTC Challenge!</h2>
       <iframe width="100%" src="https://www.youtube.com/embed/XiGB_8Ppnbs?start=111" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
