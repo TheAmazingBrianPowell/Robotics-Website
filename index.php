@@ -93,6 +93,8 @@
         <li>View the <a href = "https://github.com/TheAmazingBrianPowell/Robotics-Website">code</a> to this website on github!</li>
         <li><a href = "/resources/updated_donation_letter">Sponsor Us</a></li>
       </ul>
+      <h2>The FTC Challenge!</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XiGB_8Ppnbs?start=111" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </article>
     <section id = "officers">
         <!-- The Officers side bar, is either side-by-side to the text or below it based on viewport size -->
