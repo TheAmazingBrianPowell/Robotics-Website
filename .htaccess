@@ -2,10 +2,10 @@ Satisfy Any
 
 RewriteEngine On
 
-#Rewrites uppercase to lowercase
-RewriteCond %{REQUEST_FILENAME} -f [NC]
+#Rewrites to correct case
+RewriteCond %{REQUEST_FILENAME} (-f) [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI} [L,NC]
+RewriteRule ^ %1 [L,NC]
 
 #rewrites php files to directories
 
