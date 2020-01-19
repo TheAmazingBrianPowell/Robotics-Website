@@ -2,17 +2,12 @@ Satisfy Any
 
 RewriteEngine On
 
-#Rewrites to correct case
-RewriteCond %{REQUEST_FILENAME} (-f) [NC]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ %1 [L,NC]
-
 #rewrites php files to directories
 
 #RewriteCond %{REQUEST_FILENAME} \.php [NC]
 #RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.php $1 [NC,L,R=301]
 
-RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteCond %{REQUEST_FILENAME}\.php -f [NC]
 RewriteRule ^(.*)$ $1.php [NC,L]
 
 
@@ -20,11 +15,16 @@ RewriteRule ^(.*)$ $1.php [NC,L]
 #RewriteCond %{REQUEST_FILENAME} \.html [NC]
 #RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.html $1 [NC,L,R=301]
 
-RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteCond %{REQUEST_FILENAME}.html -f [NC]
 RewriteRule ^(.*)$ $1.html [NC,L]
 
-RewriteCond %{REQUEST_FILENAME}.pdf -f
+RewriteCond %{REQUEST_FILENAME}.pdf -f [NC]
 RewriteRule ^(.*)$ $1.pdf [NC,L]
+
+#Rewrites to correct case
+RewriteCond %{REQUEST_FILENAME} (-f) [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ %1 [L,NC]
 
 RewriteCond %{REQUEST_FILENAME} \.htaccess$ [NC]
 RewriteRule ^ https://rhs-robotics.herokuapp.com [L,R=301]
