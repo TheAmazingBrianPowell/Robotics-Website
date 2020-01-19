@@ -1,23 +1,24 @@
 Satisfy Any
 
-ErrorDocument 404 /error/404
-ErrorDocument 403 /error/404
-ErrorDocument 500 /error/500
-
 RewriteEngine On
+
+#Rewrites uppercase to lowercase
+RewriteCond %{REQUEST_FILENAME} -f [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI} [L,NC]
 
 #rewrites php files to directories
 
-#RewriteCond %{REQUEST_FILENAME} \.php$ [NC]
-#RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.php $1 [NC,L,R]
+#RewriteCond %{REQUEST_FILENAME} \.php [NC]
+#RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.php $1 [NC,L,R=301]
 
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php [NC,L]
 
 
 #rewrites files with html extension
-#RewriteCond %{REQUEST_FILENAME} \.html$ [NC]
-#RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.html $1 [NC,L,R]
+#RewriteCond %{REQUEST_FILENAME} \.html [NC]
+#RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.html $1 [NC,L,R=301]
 
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
@@ -25,7 +26,13 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 RewriteCond %{REQUEST_FILENAME}.pdf -f
 RewriteRule ^(.*)$ $1.pdf [NC,L]
 
+RewriteCond %{REQUEST_FILENAME} \.htaccess$ [NC]
+RewriteRule ^ https://rhs-robotics.herokuapp.com [L,R=301]
 
 #rewrites http to https
 RewriteCond %{HTTP:X-Forwarded-Proto} !https 
-RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI} [L,R]
+RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI} [L,R=301,NC]
+
+ErrorDocument 404 /error/404
+ErrorDocument 403 /error/404
+ErrorDocument 500 /error/500
