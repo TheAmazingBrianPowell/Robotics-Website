@@ -37,5 +37,5 @@ RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.pdf [L]
 #RewriteRule ^ https://rhs-robotics.herokuapp.com [L,R=301]
 
 #rewrites http to https
-RewriteCond %{HTTP:X-Forwarded-Proto} !https 
-RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI} [L,R=301]
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+#RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI} [L,R=301]
