@@ -20,7 +20,7 @@ RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.php [NC,L]
 #RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.html $1 [NC,L,R=301]
 
 RewriteCond %{REQUEST_FILENAME}\.html -f [NC]
-RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.html [NC,L,R]
+RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.html [NC,L]
 
 RewriteCond %{REQUEST_FILENAME}\.pdf -f [NC]
 RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.pdf [NC,L]
@@ -33,8 +33,8 @@ RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.pdf [NC,L]
 #RewriteCond %{REQUEST_URI} !-f
 #RewriteRule ^ https://rhs-robotics.herokuapp.com%1 [L,NC,R=301]
 
-RewriteCond %{REQUEST_URI} \.htaccess$ [NC]
-RewriteRule ^ https://rhs-robotics.herokuapp.com [L,R=301]
+#RewriteCond %{REQUEST_URI} \.htaccess$ [NC]
+#RewriteRule ^ https://rhs-robotics.herokuapp.com [L,R=301]
 
 #rewrites http to https
 RewriteCond %{HTTP:X-Forwarded-Proto} !https 
