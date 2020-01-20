@@ -11,7 +11,7 @@ RewriteEngine On
 #RewriteCond %{REQUEST_URI} \.php [NC]
 #RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.php $1 [NC,L,R=301]
 
-RewriteCond %{REQUEST_URI}\.php -f [NC]
+RewriteCond %{REQUEST_FILENAME}\.php -f [NC]
 RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.php [NC,L]
 
 
@@ -19,10 +19,10 @@ RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.php [NC,L]
 #RewriteCond %{REQUEST_URI} \.html [NC]
 #RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.html $1 [NC,L,R=301]
 
-RewriteCond %{REQUEST_URI}\.html -f [NC]
-RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.html [NC,L]
+RewriteCond %{REQUEST_FILENAME}\.html -f [NC]
+RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.html [NC,L,R]
 
-RewriteCond %{REQUEST_URI}\.pdf -f [NC]
+RewriteCond %{REQUEST_FILENAME}\.pdf -f [NC]
 RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.pdf [NC,L]
 
 #Rewrites to correct case
