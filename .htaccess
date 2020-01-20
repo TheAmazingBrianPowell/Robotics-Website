@@ -8,34 +8,24 @@ RewriteEngine On
 
 #rewrites php files to directories
 
-#RewriteCond %{REQUEST_URI} \.php [NC]
-#RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.php $1 [NC,L,R=301]
+#RewriteCond %{REQUEST_FILENAME} \.php$ [NC]
+#RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.php $1 [NC,L,R]
 
-RewriteCond %{REQUEST_FILENAME}\.php -f [NC]
-RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.php [NC,L]
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
 
 
 #rewrites files with html extension
-#RewriteCond %{REQUEST_URI} \.html [NC]
-#RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.html $1 [L,R=301]
+#RewriteCond %{REQUEST_FILENAME} \.html$ [NC]
+#RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.html $1 [NC,L,R]
 
-RewriteCond %{REQUEST_FILENAME}\.html -f [NC]
-RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.html [L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
 
-RewriteCond %{REQUEST_FILENAME}\.pdf -f [NC]
-RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI}.pdf [L]
+RewriteCond %{REQUEST_FILENAME}.pdf -f
+RewriteRule ^(.*)$ $1.pdf [NC,L]
 
-#Rewrites to correct case
-#RewriteCond %{REQUEST_URI} (-f) [NC,OR]
-#RewriteCond %{REQUEST_URI}\.php (-f) [NC,OR]
-#RewriteCond %{REQUEST_URI}\.html (-f) [NC,OR]
-#RewriteCond %{REQUEST_URI}\.pdf (-f) [NC]
-#RewriteCond %{REQUEST_URI} !-f
-#RewriteRule ^ https://rhs-robotics.herokuapp.com%1 [L,NC,R=301]
-
-#RewriteCond %{REQUEST_URI} \.htaccess$ [NC]
-#RewriteRule ^ https://rhs-robotics.herokuapp.com [L,R=301]
 
 #rewrites http to https
-#RewriteCond %{HTTP:X-Forwarded-Proto} !https 
-#RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI} [L,R]
