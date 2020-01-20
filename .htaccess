@@ -22,12 +22,12 @@ RewriteCond %{REQUEST_FILENAME}\.pdf -f [NC]
 RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_FILENAME}.pdf [NC,L]
 
 #Rewrites to correct case
-RewriteCond %{REQUEST_URI} (-f) [NC,OR]
-RewriteCond %{REQUEST_URI}\.php (-f) [NC,OR]
-RewriteCond %{REQUEST_URI}\.html (-f) [NC,OR]
-RewriteCond %{REQUEST_URI}\.pdf (-f) [NC]
-RewriteCond %{REQUEST_URI} !-f
-RewriteRule ^ https://rhs-robotics.herokuapp.com%1 [L,NC,R=301]
+#RewriteCond %{REQUEST_URI} (-f) [NC,OR]
+#RewriteCond %{REQUEST_URI}\.php (-f) [NC,OR]
+#RewriteCond %{REQUEST_URI}\.html (-f) [NC,OR]
+#RewriteCond %{REQUEST_URI}\.pdf (-f) [NC]
+#RewriteCond %{REQUEST_URI} !-f
+#RewriteRule ^ https://rhs-robotics.herokuapp.com%1 [L,NC,R=301]
 
 RewriteCond %{REQUEST_FILENAME} \.htaccess$ [NC]
 RewriteRule ^ https://rhs-robotics.herokuapp.com [L,R=301]
