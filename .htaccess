@@ -4,21 +4,21 @@ RewriteEngine On
 
 #rewrites php files to directories
 
-#RewriteCond %{REQUEST_FILENAME} \.php [NC]
+#RewriteCond %{REQUEST_URI} \.php [NC]
 #RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.php $1 [NC,L,R=301]
 
-RewriteCond %{REQUEST_FILENAME}\.php -f [NC]
+RewriteCond %{REQUEST_URI}\.php -f [NC]
 RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_FILENAME}.php [NC,L]
 
 
 #rewrites files with html extension
-#RewriteCond %{REQUEST_FILENAME} \.html [NC]
+#RewriteCond %{REQUEST_URI} \.html [NC]
 #RewriteRule ^(https://rhs-robotics\.herokuapp\.com.*)\.html $1 [NC,L,R=301]
 
-RewriteCond %{REQUEST_FILENAME}\.html -f [NC]
+RewriteCond %{REQUEST_URI}\.html -f [NC]
 RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_FILENAME}.html [NC,L]
 
-RewriteCond %{REQUEST_FILENAME}\.pdf -f [NC]
+RewriteCond %{REQUEST_URI}\.pdf -f [NC]
 RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_FILENAME}.pdf [NC,L]
 
 #Rewrites to correct case
@@ -29,7 +29,7 @@ RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_FILENAME}.pdf [NC,L]
 #RewriteCond %{REQUEST_URI} !-f
 #RewriteRule ^ https://rhs-robotics.herokuapp.com%1 [L,NC,R=301]
 
-RewriteCond %{REQUEST_FILENAME} \.htaccess$ [NC]
+RewriteCond %{REQUEST_URI} \.htaccess$ [NC]
 RewriteRule ^ https://rhs-robotics.herokuapp.com [L,R=301]
 
 #rewrites http to https
