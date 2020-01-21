@@ -74,6 +74,13 @@
 
     <!--About Us Container-->
     <article id = "about">
+      <h2>Awards</h2>
+      <ul>
+        <li>First Place Inspire Award League Meet - Aries</li>
+        <li>Winning Alliance Award League Meet - Aries</li>
+        <li>Winning Alliance Award League Meet - Taurus</li>
+        <li>Design Award League Meet - Scorpio</li>
+      </ul>
       <h2>About Us</h2>
       <p>
         &#8195Welcome to Roseburg High School's Robotics Website! The RHS Robotics program is a competitive, student run club that allows for unique experience of the FIRST Tech Challenge Program.
