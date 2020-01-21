@@ -65,6 +65,11 @@ li {
   text-align:left;
 }
 
+ul {
+  max-width:400px;
+  margin:auto;
+}
+
 /* Remove link-like properties from images and svgs */
 figure a{
   text-decoration:none;
