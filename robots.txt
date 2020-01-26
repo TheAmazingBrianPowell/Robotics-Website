@@ -7,3 +7,4 @@ Disallow: /.heroku
 Disallow: /vendor
 Disallow: /resources/feather.png
 Disallow /resources/FIRST_logo.png
+Disallow google56830dc2c8d49f6f.html
