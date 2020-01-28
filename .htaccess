@@ -7,7 +7,7 @@ ErrorDocument 500 /error/500
 RewriteEngine On
 
 RewriteCond %{HTTP_HOST} ^rhs-robotics\.herokuapp\.com [NC] 
-RewriteRule ^(.*)$ http://www.rhsrobotics.net%{REQUEST_URI} [NC,R=301,L] 
+RewriteRule ^(.*)$ http://www.rhsrobotics.net$1 [NC,R=301,L] 
 
 #rewrites php files to directories
 
