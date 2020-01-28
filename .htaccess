@@ -29,3 +29,6 @@ RewriteRule ^(.*)$ $1.pdf [NC,L]
 #rewrites http to https
 #RewriteCond %{HTTP:X-Forwarded-Proto} !https
 #RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI} [L,R]
+
+RewriteCond %{HTTP_HOST} ^www\.rhs-robotics.herokuapp\.com(.*)$ [NC] 
+RewriteRule ^ www.rhsrobotics.net%1 [NC,QSA,R=301,L] 
