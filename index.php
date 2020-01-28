@@ -123,7 +123,7 @@
         <figure>
           <a href = "resources/Maddy.jpg" target = "_blank">
             <img src = "resources/Maddy.jpg" alt = "">
-            <figcaption>Maddy<br>(Sergeant&nbspof&nbspArms)</figcaption>
+            <figcaption>Madeline<br>(Sergeant&nbspof&nbspArms)</figcaption>
           </a>
         </figure>
         <figure>
