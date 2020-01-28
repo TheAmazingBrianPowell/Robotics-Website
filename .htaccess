@@ -31,4 +31,4 @@ RewriteRule ^(.*)$ $1.pdf [NC,L]
 #RewriteRule ^ https://rhs-robotics.herokuapp.com%{REQUEST_URI} [L,R]
 
 RewriteCond %{HTTP_HOST} ^rhs-robotics\.herokuapp\.com [NC] 
-RewriteRule ^ rhsrobotics.net%{REQUEST_URI} [NC,QSA,R=301,L] 
+RewriteRule ^ http://www.rhsrobotics.net%{REQUEST_URI} [NC,QSA,R=301,L] 
