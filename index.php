@@ -18,7 +18,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="rhs, robotics, roseburg, high school, FTC, tech">
     <meta name="google-site-verification" content="O6-Dc-Hyl5fwdAXeFvv5bVHZvjdmJO4JhK6cdQdM_zg" />
-    <meta name="wot-verification" content="e82a2e9bf92af97bb65b"/>
     <meta name="description" content="The RHS Robotics program is a competitive, student run club that allows for unique experience of the FIRST Tech Challenge Program, and enables students to design, build, program, and compete in robotics">
   </head>
 <!--
