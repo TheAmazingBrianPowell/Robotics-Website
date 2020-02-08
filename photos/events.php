@@ -76,7 +76,7 @@
           if($dirArray2[$i][0] != '.') {
             //display files that end with .jpg as images
             if(substr($dirArray2[$i],-3) == 'jpg' || substr($dirArray2[$i],-3) == 'JPG') {
-              echo '<div><a href = ' . $dirArray2[$i] . ' target = "_blank"><img data-src = ' . $dirArray2[$i] . ' alt = "'. str_replace('_', ' ', substr($dirArray2[$i],strpos($dirArray2[$i], '/', 12) + 1, -4)) . '"></a></div>';
+              echo '<div><a href = ' . $dirArray2[$i] . ' target = "_blank"><img src = "/resources/loading.png" data-src = ' . $dirArray2[$i] . ' alt = "'. str_replace('_', ' ', substr($dirArray2[$i],strpos($dirArray2[$i], '/', 12) + 1, -4)) . '"></a></div>';
               //continue to next loop iteration
               continue;
             }
