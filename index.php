@@ -59,33 +59,31 @@
 
     <!--Navigation Bar-->
     <nav>
-      <span>|</span>
       <a href = "http://www.roseburg.k12.or.us/rhs/" target = "_blank" rel="noreferrer" title = "Roseburg High School"><img src = "resources/feather.png" alt = "Roseburg High School Feather"></a>
-      <span>|</span>
+      <span>&nbsp&nbsp</span>
       <a href = "/photos/">Photos</a>
-      <span>|</span>
+      <span>&nbsp&nbsp</span>
       <a href = "#teams">Teams</a>
-      <span>|</span>
+      <span>&nbsp&nbsp</span>
       <a href = "#events">Events</a>
-      <span>|</span>
+      <span>&nbsp&nbsp</span>
       <a href = "https://www.firstinspires.org/robotics/ftc" target = "_blank" rel="noreferrer" title = "First Tech Challenge"><img src = "resources/FIRST_logo.png" alt = "FIRST Tech Challenge Logo"></a>
-      <span>|</span>
     </nav>
 
     <!--About Us Container-->
-    <article id = "about">
+    <section id = "about">
       <h2>Awards</h2>
       <ul>
         <li>First Place Inspire Award League Meet - Aries</li>
         <li>Winning Alliance Award League Meet - Aries</li>
         <li>Winning Alliance Award League Meet - Taurus</li>
-        <li>Design Award League Meet - Scorpio</li>
+        <li>Innovative Award League Meet - Scorpio</li>
       </ul>
       <h2>About Us</h2>
       <p>
         &#8195Welcome to Roseburg High School's Robotics Website! The RHS Robotics program is a competitive, student run club that allows for unique experience of the FIRST Tech Challenge Program.
-        <br>&#8195The FIRST FTC competition enables students to design, build, program, and compete with a robot, hopefully in that order, in their new challenge each year. This year, the challenge is named Skystone, and the playing field looks like this:<br>
-        <img src = "/resources/first_field_skystone.png" width = 100%" alt = "The FTC playing field includes many different obstacles. This year the main goal is to tranport and stack the yellow and black stones"><br>
+        <br><br>&#8195The FIRST FTC competition enables students to design, build, program, and compete with a robot, hopefully in that order, in their new challenge each year. This year, the challenge is named Skystone, and the playing field looks like this:<br>
+        <img src = "/resources/first_field_skystone.png" width = 100%" alt = "The FTC playing field includes many different obstacles. This year the main goal is to tranport and stack the yellow and black stones"><br><br>
         &#8195This club started in 2017 as a group of high-schoolers building robots and programming them to do certain obstacles for fun. As the months went on, the club began to grow and compete against other teams in local competitions. As of 2020, the club has 30 members split among three teams, <a href = "/teams/aries">Aries</a>, Scorpio, and Taurus.
       </p>
       <h2>Scores</h2>
@@ -100,54 +98,57 @@
         <li>View the <a href = "https://github.com/TheAmazingBrianPowell/Robotics-Website" rel="noreferrer" target = "_blank">code</a> to this website on github!</li>
         <li><a href = "/resources/updated_donation_letter" rel="noreferrer" target = "_blank">Sponsor Us</a></li>
       </ul>
-      <h2>The FTC Challenge!</h2>
-      <iframe width="100%" src="https://www.youtube.com/embed/XiGB_8Ppnbs?start=111" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </article>
+    </section>
+    <section id = "fixedSidebar">
+	<div>
+	<iframe width="100%" src="https://www.youtube.com/embed/XiGB_8Ppnbs?start=111" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </section>
     <section id = "officers">
         <!-- The Officers side bar, is either side-by-side to the text or below it based on viewport size -->
         <h3>Officers</h3>
 
         <!-- Image and link to Officers profile page with caption -->
         <figure>
-          <a href = "resources/Jace.jpg" target = "_blank">
-            <img src = "resources/Jace.jpg" alt>
-            <figcaption>Jace<br>(Co-President)</figcaption>
+          <a href = "resources/members/Jace.jpg" target = "_blank">
+            <img src = "resources/members/Jace.jpg" alt>
+            <figcaption>Jace:<br>Co-President</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Kou.jpg" target = "_blank">
-            <img src = "resources/Kou.jpg" alt = "">
-            <figcaption>Kou<br>(Co-President)</figcaption>
+          <a href = "resources/members/Kou.jpg" target = "_blank">
+            <img src = "resources/members/Kou.jpg" alt>
+            <figcaption>Kou:<br>Co-President</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Maddy.jpg" target = "_blank">
-            <img src = "resources/Maddy.jpg" alt = "">
-            <figcaption>Madeline<br>(Sergeant&nbspof&nbspArms)</figcaption>
+          <a href = "resources/members/Maddy.jpg" target = "_blank">
+            <img src = "resources/members/Maddy.jpg" alt>
+            <figcaption>Madeline:<br>Sergeant of Arms</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Clara.jpg" target = "_blank">
-            <img src = "resources/Clara.jpg" alt = "">
-            <figcaption>Clara<br>(Media&nbspSpecialist)</figcaption>
+          <a href = "resources/members/Clara.jpg" target = "_blank">
+            <img src = "resources/members/Clara.jpg" alt>
+            <figcaption>Clara:<br>Media Specialist</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Amy.JPG" target = "_blank">
-            <img src = "resources/Amy.JPG" alt = "">
-            <figcaption>Amy<br>(Secretary)</figcaption>
+          <a href = "resources/members/Amy.JPG" target = "_blank">
+            <img src = "resources/members/Amy.JPG" alt>
+            <figcaption>Amy:<br>Secretary</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Logan.JPG" target = "_blank">
-            <img src = "resources/Logan.JPG" alt = "">
-            <figcaption>Logan<br>(Treasurer)</figcaption>
+          <a href = "resources/members/Logan.JPG" target = "_blank">
+            <img src = "resources/members/Logan.JPG" alt>
+            <figcaption>Logan:<br>Treasurer</figcaption>
           </a>
         </figure>
         <figure>
-          <a href = "resources/Brian.JPG" target = "_blank">
-            <img src = "resources/Brian.JPG" alt = "">
-            <figcaption>Brian<br>(Website&nbspDesigner)</figcaption>
+          <a href = "resources/members/Brian.JPG" target = "_blank">
+            <img src = "resources/members/Brian.JPG" alt>
+            <figcaption>Brian:<br>Website Developer</figcaption>
           </a>
         </figure>
       </section>
