@@ -97,8 +97,8 @@
       <h2>Links</h2>
       <ul>
         <li>Visit our <a href = "https://www.facebook.com/RoseburgHighSchoolRobotics" rel="noreferrer" target = "_blank">facebook page</a></li>
-        <li>View the <a href = "https://github.com/TheAmazingBrianPowell/Robotics-Website" rel="noreferrer" target = "_blank">code</a> to this website on github!</li>
-        <li><a href = "/resources/updated_donation_letter" rel="noreferrer" target = "_blank">Sponsor Us</a></li>
+        <li>View the <a href = "https://github.com/TheAmazingBrianPowell/Robotics-Website" target = "_blank">code</a> to this website on github!</li>
+        <li><a href = "/resources/updated_donation_letter" target = "_blank">Sponsor Us</a></li>
       </ul>
       <h2>The FTC Challenge!</h2>
       <iframe width="100%" src="https://www.youtube.com/embed/XiGB_8Ppnbs?start=111" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
