@@ -6,4 +6,4 @@ Disallow: /photos/years
 Disallow: /.heroku
 Disallow: /vendor
 Disallow: /resources/feather.png
-Disallow /resources/FIRST_logo.png
+Disallow: /resources/FIRST_logo.png
