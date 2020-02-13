@@ -5,10 +5,11 @@ html{
 }
 
 body{
-	font-family: sans-serif;
+	font-family: Georgia, serif;
 	margin:0px;
 	/* Removes the springy reaction when the user scrolls to the bottom of the page **/
 	overscroll-behavior:none;
+	text-align:center;
 }
 
 figure svg{
@@ -32,7 +33,7 @@ figure svg{
 	margin:25px;
 }
 
-nav>a, h1>a{
+nav>a, h1>a, nav>a:visited{
 	text-decoration:none;
 	color:black;
 }
@@ -40,14 +41,19 @@ nav>a:hover, h1>a:hover{
 	text-decoration:underline;
 }
 
-p{
+p, h2, li{
 	line-height: 150%;
+	color:rgb(72, 72, 72);
+}
+
+a:visited, a{
+	color:rgb(72,72,72)
 }
 
 /* the sidebar images */
 #officers figure img{
 	width:100%;
-	border-radius:20px;
+	border-radius:20%;
 }
 
 /* sidebar images on hover */
@@ -60,7 +66,7 @@ li {
 	text-align:left;
 }
 ul {
-	max-width:400px;
+	display:inline-block;
 	margin:auto;
 }
 /* Remove link-like properties from images and svgs */
@@ -99,17 +105,9 @@ figure{
 }
 
 
-
-
-/* Large Devices Only */
-@media only screen and (min-width: 1000px) {
-	#fixedSidebar{
-		width:400px;
-		display:inline-block;
-		vertical-align:top;
-	}
 	p{
 		font-size:1.2em;
+		text-align:left;
 	}
 	li{
 		font-size:1.2em;
@@ -141,15 +139,6 @@ figure{
 	/* Top Header */
 	h1{
 		font-size:3.5em;
-	}
-	/* Officers header, just used it because h2 was already taken, and I didn't want to make a new Id for it */
-	h3{
-		border-bottom:1px solid #DDD;
-		width:100px;
-		margin:auto;
-		margin-top:10px;
-		margin-bottom:10px;
-		font-size:1.2em;
 	}
 	/* Sub headers of each section */
 	h2 {
@@ -186,154 +175,13 @@ figure{
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Medium Sized Devices */
-@media screen and (min-width: 740px) and (max-width: 999px), print {
-	/* Ok, the rest is mostly the same... */
-	#officers>figure {
-		width:100%;
-		margin:0px;
-	}
-	#officers figcaption{
-		margin-top:2px;
-		font-family:serif;
-		font-weight:bold;
-		margin-top:0px;
-		margin-bottom:10px;
-	}
-	#about{
-		width:420px;
-		display:inline-block;
-		margin-right:50px;
-		margin-bottom:calc(-20px - 1.2em);
-	}
-	p{
-		text-align:left;
-		width:100%;
-	}
-	#officers{
-		width:120px;
-		display:inline-block;
-		margin-bottom:calc(-20px - 1.2em);
-	}
-	h1{
-		font-size:3em;
-	}
-	h2 {
-		border-bottom:1px solid #DDD;
-		width:300px;
-		margin:auto;
-		margin-top:10px;
-		margin-bottom:10px;
-		font-size:1.5em;
-	}
-	#teams{
-		margin-bottom:calc(-20px - 1.2em);
-		padding-top:calc(20px + 1.2em);
-	}
-	#events{
-		padding-top:calc(20px + 1.2em);
-	}
-	h3{
-		border-bottom:1px solid #DDD;
-		width:100px;
-		margin:auto;
-		margin-top:10px;
-		margin-bottom:10px;
-		font-size:1.2em;
-	}
-	nav{
-		position: -webkit-sticky;
-		position:sticky;
-		top:0px;
-		background:#777;
-		padding:10px;
-		font-size:1.2em;
-		opacity:0.99;
-		z-index:1;
-	}
-	nav img{
-		height:1em;
+@media screen and (min-width: 500px) and (max-width: 720px), print {
+	#break {
+		display:block;
 	}
 }
-@media only screen and (max-width: 739px) {
-	#officers figure{
-		display:inline-block;
-		width:20%;
-		margin:5px;
-	}
-	#officers figcaption{
-		margin-top:2px;
-		font-family:serif;
-		font-size:2.5vw;
-		font-weight:bold;
-	}
-	p{
-		text-align:left;
-		z-index:-1;
-		vertical-align:top;
-		width:calc(100% - 16px);
-		max-width:400px;
-		margin:auto;
-	}
-	#officers{
-		margin-bottom:calc(-20px - 0.8em);
-	}
-	#teams{
-		margin-bottom:calc(-20px - 0.8em);
-		padding-top:calc(20px + 0.8em);
-	}
-	#events{
-		padding-top:calc(20px + 0.8em);
-	}
-	h1{
-		font-size:2em;
-	}
-	h2,h3 {
-		border-bottom:1px solid #DDD;
-		width:300px;
-		margin:auto;
-		margin-top:10px;
-		margin-bottom:10px;
-		font-size:1.2em;
-	}
-	nav{
-		position: -webkit-sticky;
-		position:sticky;
-		top:0px;
-		background:#777;
-		padding:10px;
-		font-size:0.8em;
-		opacity:0.99;
-		z-index:1;
-	}
-	nav img{
-		height:0.7em;
-	}
-}
-@media only screen and (max-width: 500px) {
-	nav{
-		position:sticky;
-		top:0px;
-		background:#777;
-		padding:10px;
-		font-size:0.5em;
-		opacity:0.99;
-	}
-	nav img{
-		height:0.5em;
-	}
-}
+
 @media print {
 	nav{
 		display:none;

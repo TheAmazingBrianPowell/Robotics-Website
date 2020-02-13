@@ -72,41 +72,35 @@
 
     <!--About Us Container-->
     <section id = "about">
-      <h2>Awards</h2>
-      <ul>
-        <li>First Place Inspire Award League Meet - Aries</li>
-        <li>Winning Alliance Award League Meet - Aries</li>
-        <li>Winning Alliance Award League Meet - Taurus</li>
-        <li>Innovative Award League Meet - Scorpio</li>
-      </ul>
       <h2>About Us</h2>
       <p>
-        &#8195Welcome to Roseburg High School's Robotics Website! The RHS Robotics program is a competitive, student run club that allows for unique experience of the FIRST Tech Challenge Program.
-        <br><br>&#8195The FIRST FTC competition enables students to design, build, program, and compete with a robot, hopefully in that order, in their new challenge each year. This year, the challenge is named Skystone, and the playing field looks like this:<br>
+        Welcome to Roseburg High School's Robotics Website! The RHS Robotics program is a competitive, student run club that allows for unique experience of the FIRST Tech Challenge Program.
+        <br><br>The FIRST FTC competition enables students to design, build, program, and compete with a robot, hopefully in that order, in their new challenge each year. This year, the challenge is named Skystone, and the playing field looks like this:<br>
         <img src = "/resources/first_field_skystone.png" width = 100%" alt = "The FTC playing field includes many different obstacles. This year the main goal is to tranport and stack the yellow and black stones"><br><br>
-        &#8195This club started in 2017 as a group of high-schoolers building robots and programming them to do certain obstacles for fun. As the months went on, the club began to grow and compete against other teams in local competitions. As of 2020, the club has 30 members split among three teams, <a href = "/teams/aries">Aries</a>, Scorpio, and Taurus.
+        This club started in 2017 as a group of high-schoolers building robots and programming them to do certain obstacles for fun. As the months went on, the club began to grow and compete against other teams in local competitions. As of 2020, the club has 30 members split among three teams, <a href = "/teams/aries">Aries</a>, <a href = "https://scorpiorhsrobotics.com" target = "_blank" rel = "noreferrer">Scorpio</a>, and Taurus.
       </p>
       <h2>Scores</h2>
-      <ul>
-        <li>Scorpio's scores can be found <a href = "https://ftcscores.com/team/13189" rel="noreferrer" target = "_blank">here</a></li>
-        <li>Aries' scores can be found <a href = "https://ftcscores.com/team/15342" rel="noreferrer" target = "_blank">here</a></li>
-        <li>Taurus' scores can be found <a href = "https://ftcscores.com/team/15341" rel="noreferrer" target = "_blank">here</a></li>
-      </ul>
+      <p>Scores can be found at <a href = "https://ftcscores.com" target = "_blank" rel = "noreferrer">FTCscores.com</a>. <a href = "https://ftcscores.com/team/15342" target = "_blank" rel = "noreferrer">Scores from Aries</a>, <a href = "https://ftcscores.com/team/13189" target = "_blank" rel = "noreferrer">scores from Scorpio</a>, and <a href = "https://ftcscores.com/team/15341" target = "_blank" rel = noreferrer">scores from Taurus</a> can all be found at this site.
       <h2>Links</h2>
       <ul>
         <li>Visit our <a href = "https://www.facebook.com/RoseburgHighSchoolRobotics" rel="noreferrer" target = "_blank">facebook page</a></li>
         <li>View the <a href = "https://github.com/TheAmazingBrianPowell/Robotics-Website" rel="noreferrer" target = "_blank">code</a> to this website on github!</li>
         <li><a href = "/resources/updated_donation_letter" rel="noreferrer" target = "_blank">Sponsor Us</a></li>
       </ul>
-    </section>
-    <section id = "fixedSidebar">
-	<div>
+      <br>
+      <br>
 	<iframe width="100%" src="https://www.youtube.com/embed/XiGB_8Ppnbs?start=111" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+      <h2>Awards</h2>
+      <ul>
+        <li>First Place Inspire Award - League Meet - Aries</li>
+        <li>Winning Alliance Award - League Meet - Aries</li>
+        <li>Winning Alliance Award - League Meet - Taurus</li>
+        <li>Innovative Award - League Meet - Scorpio</li>
+      </ul>
     </section>
     <section id = "officers">
         <!-- The Officers side bar, is either side-by-side to the text or below it based on viewport size -->
-        <h3>Officers</h3>
+        <h2>Officers</h2>
 
         <!-- Image and link to Officers profile page with caption -->
         <figure>
@@ -133,6 +127,7 @@
             <figcaption>Clara:<br>Media Specialist</figcaption>
           </a>
         </figure>
+	<span id = "break"></span>
         <figure>
           <a href = "resources/members/Amy.JPG" target = "_blank">
             <img src = "resources/members/Amy.JPG" alt>
