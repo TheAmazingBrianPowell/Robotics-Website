@@ -41,7 +41,7 @@ nav>a:hover, h1>a:hover{
 	text-decoration:underline;
 }
 
-p, h2, li{
+p, h2, li {
 	line-height: 150%;
 	color:rgb(72, 72, 72);
 }
@@ -116,12 +116,13 @@ figure{
 		width:310px;
 	}
 	#about{
-		display:inline-block;
-		margin-left:10px;
 		margin-bottom:calc(-20px - 1.2em);
-		width:700px;
+		max-width: 700px;
+    		width:90%;
+		display:inline-block;
 	}
 	#officers>figure {
+		min-width:100px;
 		width:10%;
 		margin:5px;
 		display:inline-block;
@@ -130,8 +131,12 @@ figure{
 	#officers figcaption{
 		font-family:sans-serif;
 		font-weight:bold;
+		color:black;
+    		font-size:0.7em;
 	}
-
+	.names {
+    		font-size:1.5em;
+	}
 	/*The sidebar in the About Us section */
 	#officers{
 		text-align:center;
@@ -173,7 +178,6 @@ figure{
 	nav img{
 		height:1em;
 	}
-}
 
 /* Medium Sized Devices */
 @media screen and (min-width: 500px) and (max-width: 720px), print {
