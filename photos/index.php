@@ -60,21 +60,25 @@
       //Recursive Directory Iterator, YAY! this loops through items in directory, then loops through all subdirectories and subdirectories of those directories
       $di = new RecursiveDirectoryIterator('.');
       $prevName = "";
+      $counter = False;
       foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
         if(substr($filename, -3) != 'mov' && substr($filename, -3) != 'MOV' && substr($filename, -3) != 'jpg' && substr($filename, -3) != 'JPG') continue;
         //get all folders in directory and display their titles
         if(str_replace('/',' ',str_replace('_',' ',preg_replace('/^..([^\/]*)\/(.*)\/[^\/]*$/', '$1 $2', $filename))) != $prevName) {
+	  if($counter) echo '</section>';
+	  else $counter = True; 
+	  echo '<section>';
           echo '<h2>' . str_replace('/',' ',str_replace('_',' ',preg_replace('/^..([^\/]*)\/(.*)\/[^\/]*$/', '$1 $2', $filename))) . '</h2>';
         }
         $prevName = str_replace('/',' ',str_replace('_',' ',preg_replace('/^..([^\/]*)\/(.*)\/[^\/]*$/', '$1 $2', $filename))); 
         //get all images and display them as ... IMAGES!!!
         if(substr($filename, -3) == 'jpg' || substr($filename, -3) == 'JPG') {
-          echo '<div><a href = ' . substr($filename, 2) . ' target = "_blank"><img src = "/resources/loading.png" data-src = ' . substr($filename, 2) . ' alt = "' . str_replace('_', ' ', substr($filename,strpos($filename, '/', 12) + 1, -4)) . '"></a></div>';
+          echo '<div><a href = ' . str_replace(' ', '%20',substr($filename, 2)) . ' target = "_blank"><img src = "/resources/loading.png" data-src = ' . str_replace(' ', '%20', substr($filename, 2)) . ' alt = "' . str_replace('_', ' ', substr($filename,strpos($filename, '/', 12) + 1, -4)) . '"></a></div>';
           continue;
         }
         //get all (mp3?) videos and display in a video element
         if(substr($filename, -3) == 'mov' || substr($filename, -3) == 'MOV') {
-          echo '<video src = ' . substr($filename, 2) . ' controls></video>';
+          echo '<video src = ' . str_replace(' ', '%20',substr($filename, 2)) . ' controls></video>';
         }
       }
     ?>
