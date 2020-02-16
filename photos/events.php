@@ -74,14 +74,14 @@
           if($dirArray2[$i][0] != '.') {
             //display files that end with .jpg as images
             if(substr($dirArray2[$i],-3) == 'jpg' || substr($dirArray2[$i],-3) == 'JPG') {
-              echo '<div><a href = ' . $dirArray2[$i] . ' target = "_blank"><img src = "/resources/loading.png" data-src = ' . $dirArray2[$i] . ' alt = "'. str_replace('_', ' ', substr($dirArray2[$i],strpos($dirArray2[$i], '/', 12) + 1, -4)) . '"></a></div>';
+              echo '<div><a href = ' . str_replace(' ', '%20',$dirArray2[$i]) . ' target = "_blank"><img src = "/resources/loading.png" data-src = ' . str_replace(' ', '%20',$dirArray2[$i]) . ' alt = "'. str_replace(' ', '%20',str_replace('_', ' ', substr($dirArray2[$i],strpos($dirArray2[$i], '/', 12) + 1, -4))) . '"></a></div>';
               //continue to next loop iteration
               continue;
             }
 
             //display .mov files as videos
             if(substr($dirArray2[$i],-3) == 'mov' || substr($dirArray2[$i],-3) == 'MOV') {
-              echo '<video src = ' . $dirArray2[$i] . ' controls></video>';
+              echo '<video src = ' . str_replace(' ', '%20',$dirArray2[$i]) . ' controls></video>';
             }
           }
         }
