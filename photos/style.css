@@ -3,11 +3,14 @@ body{
   margin:0px;
   overscroll-behavior:none;
   text-align:center;
-  font-family: 'Orbitron', sans-serif;
+  font-family: Georgia, serif;
 }
 div img{
   width:100%;
   image-orientation: from-image;
+}
+h1, h2, h3 {
+	font-family: 'Orbitron', sans-serif;
 }
 div:hover{
   cursor:pointer;

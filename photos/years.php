@@ -26,11 +26,10 @@
   <body>
     <h1>PHOTOS</h1>
     <nav>
-      <span>|</span>
       <a href = "http://www.roseburg.k12.or.us/rhs/" target = "_blank" rel="noreferrer" title = "Roseburg High School"><img src = "/resources/feather.png" alt = "Roseburg High School"></a>
-      <span>|</span>
+      <span>&nbsp&nbsp</span>
       <a href = "/">Home</a>
-      <span>|</span>
+      <span>&nbsp&nbsp</span>
       <select aria-label = "Filter">
         <option>All Years</option>
         <?php
@@ -57,9 +56,8 @@
           closedir($myDirectory2);
         ?>
       </select>
-      <span>|</span>
+      <span>&nbsp&nbsp</span>
       <a href = "https://www.firstinspires.org/robotics/ftc" target = "_blank" rel="noreferrer" title = "First Tech Challenge"><img src = "/resources/FIRST_logo.png" alt = "First Tech Challenge"></a>
-      <span>|</span>
     </nav>
     <?php
       $di = new RecursiveDirectoryIterator('.');
