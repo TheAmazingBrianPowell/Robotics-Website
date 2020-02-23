@@ -93,7 +93,7 @@ p {
     font-size: 1.2em;
 }
 
-p, h2, li {
+p, h2, li ,a {
     line-height: 150%;
     color: rgb(72, 72, 72);
 }
