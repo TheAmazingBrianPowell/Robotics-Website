@@ -19,5 +19,5 @@ RewriteRule ^(.*)$ $1.pdf [NC,L,R=301]
 RewriteCond %{REQUEST_FILENAME}.txt -f
 RewriteRule ^(.*)$ $1.txt [NC,L,R=301]
 
-RewriteCond %{SERVER_PORT} != 443 [OR]
+RewriteCond %{SERVER_PORT} != 443
 RewriteRule ^ https://rhsrobotice.net%{REQUEST_URI} [L,R=301]
