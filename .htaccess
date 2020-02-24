@@ -6,9 +6,6 @@ ErrorDocument 500 /error/500
 
 RewriteEngine On
 
-RewriteCond %{REQUEST_URI}/ -d [NC]
-RewriteRule ^ https://rhsrobotics.net%{REQUEST_URI}/ [NC,R=301,L]
-
 RewriteCond %{HTTP_HOST} rhs-robotics\.herokuapp\.com [NC,OR]
 RewriteCond %{HTTP_HOST} www\.rhsrobotics\.net [NC]
 RewriteRule ^ https://rhsrobotics.net%{REQUEST_URI} [NC,R=301,L]
@@ -21,3 +18,6 @@ RewriteRule ^(.*)$ $1.pdf [NC,L]
 
 RewriteCond %{REQUEST_FILENAME}.txt -f
 RewriteRule ^(.*)$ $1.txt [NC,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://rhsrobotics.net{REQUEST_URI}
