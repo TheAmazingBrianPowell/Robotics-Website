@@ -19,5 +19,4 @@ RewriteRule ^(.*)$ $1.pdf [NC,L,R=301]
 RewriteCond %{REQUEST_FILENAME}.txt -f
 RewriteRule ^(.*)$ $1.txt [NC,L,R=301]
 
-RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://rhsrobotics.net%{REQUEST_URI} [NC,R=301,L]
+RewriteRule ^http://rhsrobotics.net.*$ https://rhsrobotics.net%{REQUEST_URI} [NC,R=301,L]
