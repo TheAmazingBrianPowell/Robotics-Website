@@ -11,13 +11,13 @@ RewriteCond %{HTTP_HOST} www\.rhsrobotics\.net [NC]
 RewriteRule ^ https://rhsrobotics.net%{REQUEST_URI} [NC,R=301,L]
 
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteRule ^(.*)$ $1.html [NC,L,R=301]
 
 RewriteCond %{REQUEST_FILENAME}.pdf -f
-RewriteRule ^(.*)$ $1.pdf [NC,L]
+RewriteRule ^(.*)$ $1.pdf [NC,L,R=301]
 
 RewriteCond %{REQUEST_FILENAME}.txt -f
-RewriteRule ^(.*)$ $1.txt [NC,L]
+RewriteRule ^(.*)$ $1.txt [NC,L,R=301]
 
 RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://rhsrobotics.net{REQUEST_URI}
+RewriteRule ^ https://rhsrobotics.net{REQUEST_URI} [NC,R=301,L]
