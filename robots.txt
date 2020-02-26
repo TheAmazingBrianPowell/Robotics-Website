@@ -1,5 +1,5 @@
 User-agent: *
-Sitemap: http://rhsrobotics.net/sitemap
+Sitemap: https://rhsrobotics.net/sitemap.php
 Disallow: /error
 Disallow: /photos/events
 Disallow: /photos/years
