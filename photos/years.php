@@ -31,7 +31,6 @@
       <a href = "/">Home</a>
       <span>&nbsp&nbsp</span>
       <select aria-label = "Filter">
-        <option>All Years</option>
         <?php
           //basically the same as events.php in the same directory, just look at that for comments
           $myDirectory=opendir(".");
@@ -62,10 +61,12 @@
     <?php
       $di = new RecursiveDirectoryIterator('.');
       $prevName = "";
+      $first = false;
       foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
         if(substr($filename, -3) != 'mov' && substr($filename, -3) != 'MOV' && substr($filename, -3) != 'jpg' && substr($filename, -3) != 'JPG') continue;
         if(str_replace('/',' ',str_replace('_',' ',preg_replace('/^.[^\/]*\/(.*)\/[^\/]*$/', '$1', $filename))) != $prevName) {
-          echo '<h2>' . str_replace('/',' ',str_replace('_',' ',preg_replace('/^.[^\/]*\/(.*)\/[^\/]*$/', '$1', $filename))) . '</h2>';
+          echo (($first) ? '</section>' : '') . '<section><h2>' . str_replace('/',' ',str_replace('_',' ',preg_replace('/^.[^\/]*\/(.*)\/[^\/]*$/', '$1', $filename))) . '</h2>';
+	  $first = true;
         }
         $prevName = str_replace('/',' ',str_replace('_',' ',preg_replace('/^.[^\/]*\/(.*)\/[^\/]*$/', '$1', $filename))); 
         if(substr($filename, -3) == 'jpg' || substr($filename, -3) == 'JPG') {

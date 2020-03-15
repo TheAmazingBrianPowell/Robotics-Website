@@ -26,7 +26,6 @@
       <a href = "/">Home</a>
       <span>&nbsp&nbsp</span>
       <select aria-label = "Filter">
-        <option>All Years</option>
         <?php
           //open parent directory
           $myDirectory=opendir("..");
