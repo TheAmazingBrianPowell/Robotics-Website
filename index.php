@@ -92,7 +92,7 @@
 	<iframe width="100%" src="https://www.youtube.com/embed/XiGB_8Ppnbs?start=111" title = "FIRST Tech Challenge Introduction Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <h2>Awards</h2>
       <ul>
-	<li>Advancing team to Worlds (cancelled) - Aries</li>
+	<li>Advancing team to Worlds (canceled) - Aries</li>
 	<li>First Place Inspire Award - Super Qualifers - Aries</li>
         <li>First Place Inspire Award - League Meet - Aries</li>
         <li>Winning Alliance Award - League Meet - Aries</li>
