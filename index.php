@@ -84,7 +84,7 @@
       <h2>Links</h2>
       <ul>
         <li>Visit our <a href = "https://www.facebook.com/RoseburgHighSchoolRobotics" rel="noreferrer" target = "_blank">facebook page</a></li>
-        <li>View the <a href = "https://github.com/TheAmazingBrianPowell/Robotics-Website" target = "_blank">code</a> to this website on github!</li>
+        <li>View the <a href = "https://github.com/TheAmazingBrianPowell/Robotics-Website" target = "_blank">code</a> to this website on Github!</li>
         <li><a href = "/resources/updated_donation_letter" target = "_blank">Sponsor Us</a></li>
       </ul>
       <br>
