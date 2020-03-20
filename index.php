@@ -98,7 +98,7 @@
         <li>Winning Alliance Award - League Meet - Aries</li>
         <li>Winning Alliance Award - League Meet - Taurus</li>
         <li>Innovative Award - League Meet - Scorpio</li>
-	<li>Dean's List Semifinalist - Brian Powell - Aries</li>
+	<li>Dean's List Finalist - Brian Powell - Aries</li>
       </ul>
     </section>
     <section id = "officers">
