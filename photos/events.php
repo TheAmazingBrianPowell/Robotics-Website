@@ -15,7 +15,6 @@
     <title>Photos <?php echo str_replace(['_','/'], ' ', substr($_SERVER['REQUEST_URI'],8,-1)); ?></title>
     <link rel="stylesheet" type="text/css" href="../../style.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <link rel="icon" href="/resources/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
