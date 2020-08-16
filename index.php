@@ -14,7 +14,6 @@
     <title>RHS Robotics</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <link rel="icon" href="resources/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="rhs, robotics, roseburg, high school, FTC, tech">
     <meta name="google-site-verification" content="O6-Dc-Hyl5fwdAXeFvv5bVHZvjdmJO4JhK6cdQdM_zg" />
