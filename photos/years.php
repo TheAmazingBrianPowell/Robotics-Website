@@ -7,20 +7,12 @@
   }
 ?>
 <!DOCTYPE html>
-<!--
-  Copy and past is great...
-  But its even better when you use PHP require
-  And you don't need as much storage
-  YAY!!!
-  '(When you have a bad code IDE, the apostrophe...)
--->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Photos <?php echo str_replace(['_','/'], ' ', substr($_SERVER['REQUEST_URI'],8,9)); ?></title>
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <link rel="icon" href="/resources/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
